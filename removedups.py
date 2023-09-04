@@ -1,10 +1,14 @@
-def removeDuplicates(arr, n):
-    if n == 0 or n == 1:
-        return n
-    arr.sort()
-    j = 1
-    for i in range(1, n):
-        if arr[i] != arr[i-1]:
-            arr[j] = arr[i]
-            j += 1
-    return j
+def get_array_elements():
+    """
+    This function takes array elements from the user.
+    """
+    array_size = int(input("Enter the number of elements in the array: "))
+    array = []
+    for i in range(array_size):
+        element = int(input("Enter element {}: ".format(i + 1)))
+        array.append(element)
+    return array
+
+
+array = get_array_elements()
+print("The array is: ", array)
