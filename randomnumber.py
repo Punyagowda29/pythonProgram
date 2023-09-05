@@ -8,6 +8,6 @@ for num in number_copy:
     if num<35:
         count35+=1
     elif num>45:
-        numbers.remove(num)
+        numbers .remove(num)
 print(count35)
-print(number_copy)
+print(numbers)
